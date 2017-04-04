@@ -1,35 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="edu.uoc.android.currentweek.pantalla1">
+    android:orientation="vertical">
 
     <TextView
         android:id="@+id/tv1"
-        android:layout_width="368dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="What's the current week number?"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="8dp"
-        android:layout_marginTop="218dp" />
+        android:layout_marginTop="118dp"
+        android:paddingLeft="20dp"
+        android:text="What's the current week number?" />
+
 
     <EditText
-        android:layout_width="368dp"
+        android:id="@+id/et1"
+        android:layout_width="350dp"
         android:layout_height="wrap_content"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:id="@+id/et1" />
+        android:layout_centerHorizontal="true" />
+
 
     <Button
         android:id="@+id/bt1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        tools:layout_editor_absoluteY="278dp"
-        android:clickable="true"/>
-</android.support.constraint.ConstraintLayout>
+        android:layout_centerHorizontal="true"
+        android:clickable="true"
+        android:text="CHECK" />
+
+
+</RelativeLayout>
